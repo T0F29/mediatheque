@@ -1,0 +1,180 @@
+body {
+    font-family: Verdana;
+    font-size: 0.9em;
+    font-weight: regular;
+    color: #463F3E;
+}
+
+a {
+    color: #FF8400;
+}
+
+#bandeau {
+    display: flex;
+    flex-direction: row;
+}
+
+#logo {
+    width: 150px;
+}
+
+#logo img {
+    width: 100%;
+}
+
+#titre {
+    padding-top: 10px;
+    font-size: 1.2em;
+    width: 100%;
+    text-align: center;
+}
+
+#menu {
+    background-color: #EDEEEF;
+}
+
+#menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+#menu li {
+    padding: 5px;
+}
+
+#accueil {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.diaporama {
+    display: flex;
+    flex-direction: column;
+}
+
+.vignette {
+    border: solid 1px #000000;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.image {
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+}
+.image img {
+    width: 100%;
+}
+
+.form-control {
+    width: calc(100% - 16px);
+}
+
+.btn {
+    float: right;
+}
+
+footer {
+    background-color: #878C95;
+    color: #ffffff;
+    text-align: center;
+}
+
+@media all and (min-width: 400px) {
+    #titre {
+        padding-top: 20px;
+        font-size: 1.4em;
+    }
+    .diaporama {
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .vignette {
+        width: calc(50% - 42px);
+        margin: 5px 10px;
+    }
+    .form-container {
+        width: 400px;
+        margin: 0px auto;
+    }
+}
+
+@media all and (min-width: 600px) {
+    header, main, footer {
+        margin: 0 auto;
+        width: 600px;
+    }
+    #logo {
+        width: 219px;
+    }
+    #titre {
+        padding-top: 39px;
+        font-size: 1.6em;
+    }
+    #menu:after {
+        content: "";
+        /* Important, sinon l'élément n'est pas généré. */
+        display: table;
+        clear: both;
+    }
+    #menu-gauche {
+        float: left;
+        background-color: #EDEEEF;
+    }
+    #menu-droite {
+        float: right;
+        background-color: #EDEEEF;
+    }
+    #menu ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .vignette {
+        width: 258px;
+    }
+}
+
+@media all and (min-width: 800px) {
+    header, main, footer {
+        width: 800px;
+    }
+    #titre {
+        padding-top: 43px;
+        font-size: 1.6em;
+    }
+    .vignette {
+        width: 224px;
+    }
+}
+
+@media all and (min-width: 992px) {
+    header, main, footer {
+        width: 992px;
+    }
+    #titre {
+        padding-top: 46px;
+        font-size: 1.6em;
+    }
+    .vignette {
+        width: 206px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    header, main, footer {
+        width: 1200px;
+    }
+    #titre {
+        padding-top: 48px;
+        font-size: 1.6em;
+    }
+    .vignette {
+        width: 258px;
+    }
+}
